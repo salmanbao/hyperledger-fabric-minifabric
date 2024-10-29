@@ -1,6 +1,3 @@
-![Status Badge](https://img.shields.io/badge/Status-archived-red)
-
-**NOTE:** This lab has been archived and is no longer being maintained.
 
 # Minifabric 
 
@@ -52,6 +49,11 @@ mkdir %userprofile%\mywork & cd %userprofile%\mywork & curl -o minifab.cmd -sL h
 
 Move the minifab (Linux and OS X) or minifab.cmd (Windows) script to a directory which is part of your execution PATH in your system or add the directory containing it to your PATH. This is to make the later operations a bit easier, you will be able to run the minifab command anywhere in your system without specifying the path to the minifab script.
 
+#### Or build the minifabric image locally
+
+```
+docker build -t hyperledgerlabs/minifab:latest . --platform linux/arm64
+```
 ### 2. Stand up a fabric network:
 
 ```
